@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saabir Dahir Mahamud · CV</title>
+  <meta name="description" content="CV of Saabir Dahir Mahamud: aspiring Data Engineer, Cybersecurity graduate (4.0 GPA, Honors), Software Engineering student.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b1020'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%232dd4bf' font-family='monospace' font-weight='700'>S_</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #0f172a; --muted: #475569; --accent: #0d9488; --line: #e2e8f0; --bg: #eef1f6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, "Segoe UI", sans-serif; font-size: 10.5pt; line-height: 1.5; }
+    .toolbar { display: flex; justify-content: center; gap: 10px; padding: 16px; flex-wrap: wrap; }
+    .toolbar a, .toolbar button {
+      font: inherit; font-weight: 600; padding: 9px 16px; border-radius: 10px; border: 1px solid var(--line);
+      background: #fff; color: var(--ink); text-decoration: none; cursor: pointer;
+    }
+    .toolbar button { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .page { width: min(210mm, 100% - 32px); margin: 0 auto 32px; background: #fff; padding: 16mm 16mm 14mm; box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08); border-radius: 6px; }
+    header { display: flex; gap: 18px; align-items: center; border-bottom: 2px solid var(--accent); padding-bottom: 12px; }
+    header img { width: 78px; height: 78px; border-radius: 50%; object-fit: cover; flex: none; }
+    h1 { font-size: 22pt; margin: 0; letter-spacing: -0.01em; line-height: 1.1; }
+    .title { color: var(--accent); font-weight: 600; margin: 3px 0 6px; }
+    .contact { color: var(--muted); font-size: 9.5pt; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+    .contact a { color: inherit; text-decoration: none; }
+    h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 16px 0 6px; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+    p { margin: 0 0 6px; }
+    .row { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+    .row h3 { font-size: 11pt; margin: 8px 0 0; }
+    .when { color: var(--muted); font-size: 9.5pt; white-space: nowrap; }
+    .org { color: var(--muted); font-weight: 500; margin-bottom: 3px; }
+    ul { margin: 2px 0 6px; padding-left: 18px; }
+    li { margin-bottom: 2px; }
+    .skills { display: grid; grid-template-columns: 130px 1fr; gap: 3px 12px; }
+    .skills b { font-weight: 600; }
+    .proj b { font-weight: 600; }
+    .proj span { color: var(--muted); font-size: 9.5pt; }
+    .tag { display: inline-block; font-size: 8.5pt; padding: 0 6px; border-radius: 4px; background: #f0fdfa; color: var(--accent); border: 1px solid #99f6e4; margin-left: 4px; vertical-align: 1px; }
+    @media (max-width: 600px) {
+      .page { padding: 20px 16px; }
+      header { flex-direction: column; align-items: flex-start; }
+      .skills { grid-template-columns: 1fr; }
+      .skills b { margin-top: 6px; }
+    }
+    @media print {
+      @page { size: A4; margin: 0; }
+      body { background: #fff; font-size: 10pt; }
+      .toolbar { display: none; }
+      .page { width: auto; margin: 0; box-shadow: none; border-radius: 0; padding: 12mm 14mm; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html">← Back to portfolio</a>
+    <button onclick="window.print()">⬇ Save as PDF / Print</button>
+  </div>
+
+  <article class="page">
+    <header>
+      <img src="assets/saabir.jpg" alt="Saabir Dahir Mahamud">
+      <div>
+        <h1>Saabir Dahir Mahamud</h1>
+        <p class="title">Aspiring Data Engineer · Software Engineer · Cybersecurity Graduate</p>
+        <div class="contact">
+          <span>Borama, Somaliland</span>
+          <a href="mailto:mahamedmahamud019@gmail.com">mahamedmahamud019@gmail.com</a>
+          <a href="https://github.com/mahamed7">github.com/mahamed7</a>
+          <a href="https://mahamed7.github.io">mahamed7.github.io</a>
+        </div>
+      </div>
+    </header>
+
+    <h2>Profile</h2>
+    <p>Data-focused software engineer with a <b>BSc in Cybersecurity (4.0 GPA, Academic Honors)</b> and <b>two years as Chief Technology Officer</b> of SomeEats. I build across the stack, from relational and NoSQL databases and REST APIs to web, mobile and desktop apps, and I'm now specialising in <b>data engineering</b>: reliable pipelines, dimensional models and clean, analysis-ready data. I bring a security-first approach to how data is stored, moved and accessed.</p>
+
+    <h2>Experience</h2>
+    <div class="row"><h3>Chief Technology Officer</h3><span class="when">2 years</span></div>
+    <div class="org">SomeEats</div>
+    <ul>
+      <li>Was the company's senior technical decision-maker. Set its technology direction and chose tools and platforms that fit its operations and budget.</li>
+      <li>Turned business needs into technical requirements and owned delivery from planning through to rollout.</li>
+      <li>Acted as the escalation point for technical and operational problems across the organisation, diagnosing root causes and putting fixes in place.</li>
+    </ul>
+    <div class="row"><h3>Intern</h3><span class="when">2 months</span></div>
+    <div class="org">Borama University</div>
+    <ul>
+      <li>Got hands-on experience in a professional university environment, supporting staff with day-to-day operations and records.</li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="row"><h3>BSc Cybersecurity, Borama University</h3><span class="when">2022 – 2026</span></div>
+    <p>Graduated with a <b>4.0 GPA</b> and <b>Academic Honors</b>.</p>
+    <div class="row"><h3>BSc Software Engineering, Amoud University</h3><span class="when">2023 – 2027 (expected)</span></div>
+    <p>Focus: software development, programming and database technologies.</p>
+
+    <h2>Selected Projects</h2>
+    <ul class="proj">
+      <li><b>HersiHealth</b>: a patient health-record web app built on Medplum and the FHIR healthcare data standard. <span>React · TypeScript · Vite</span></li>
+      <li><b>Bookstore Mobile App</b>: full CRUD book management with local SQLite storage, persisted settings, profile screens and navigation. <span>React Native · Expo · SQLite</span></li>
+      <li><b>Smart Shop Manager</b><span class="tag">in development</span>: sales, inventory and reporting for small retailers; exploring AI-assisted business insights. <span>React Native · Expo</span></li>
+      <li><b>Notes REST API</b>: an Express + Mongoose service on MongoDB that backs my mobile lab apps. <span>Node.js · MongoDB</span></li>
+      <li><b>Student Grading System</b>: a Windows desktop app for recording marks and calculating grades. <span>C# · .NET 8 · WinForms</span></li>
+      <li><b>Also:</b> Flowtime (Flutter), Firebase real-time CRUD app, and a school management web system. Code at github.com/mahamed7/Projects.</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <div class="skills">
+      <b>Data</b><span>SQL, Python, ETL/ELT, data modelling, data warehousing, database design</span>
+      <b>Databases</b><span>PostgreSQL, Oracle, MongoDB, SQLite, Firebase</span>
+      <b>Languages</b><span>JavaScript, TypeScript, PHP, C#, Dart</span>
+      <b>Frameworks</b><span>React, React Native, Expo, Flutter, Node.js/Express, .NET</span>
+      <b>Security</b><span>Cybersecurity fundamentals, access control, secure data handling</span>
+      <b>Tools</b><span>Git, GitHub, GitHub Actions (CI)</span>
+      <b>Learning now</b><span>Apache Airflow, dbt, Spark, Kafka, cloud data platforms, data quality</span>
+      <b>Languages</b><span>Somali (native), English (professional working)</span>
+    </div>
+  </article>
+</body>
+</html>
