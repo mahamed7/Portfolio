@@ -1,8 +1,8 @@
-# mahamed7.github.io
+# Portfolio
 
 Personal portfolio and CV of **Saabir Dahir Mahamud**: aspiring Data Engineer, Cybersecurity graduate (4.0 GPA, Honors), Software Engineering student and former CTO of SomeEats.
 
-**Live:** https://mahamed7.github.io
+**Live:** https://mahamed7.github.io/Portfolio/
 
 - `index.html`: the portfolio (SQL-themed sections, a data-pipeline animation, project filters and light/dark mode)
 - `resume.html`: a print-ready CV (click **Save as PDF / Print**)
