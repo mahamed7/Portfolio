@@ -183,9 +183,11 @@
         <article class="card project featured" data-type="web data">
           <div class="p-top"><span class="p-emoji">🩺</span><span class="pill live">Featured</span></div>
           <h3>HersiHealth</h3>
-          <p>A patient health-record web app built on <b>Medplum</b> and the <b>FHIR</b> healthcare data standard, with structured, interoperable patient data in a typed React front end. There is also a static prototype and an implementation spec.</p>
-          <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>FHIR</span><span>Medplum</span></div>
-          <a class="p-link" href="https://github.com/mahamed7/Projects/tree/main/Hersi" target="_blank" rel="noopener">View code ↗</a>
+          <p>A <b>FHIR</b>-native personal health record on <b>Medplum</b>. Patients upload medical documents that are classified and extracted by AI, share an emergency profile through a QR code, and create expiring, revocable share links. Every public access is written to an audit log. Built with Maslah Mohamed Ali.</p>
+          <div class="tags"><span>React</span><span>TypeScript</span><span>Vite</span><span>FHIR</span><span>Medplum</span><span>CI</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mahamed7/hersihealth" target="_blank" rel="noopener">View code ↗</a>
+          </div>
         </article>
         <article class="card project" data-type="mobile data">
           <div class="p-top"><span class="p-emoji">🛒</span><span class="pill wip">In development</span></div>
@@ -203,37 +205,77 @@
         <article class="card project" data-type="backend data">
           <div class="p-top"><span class="p-emoji">🔌</span></div>
           <h3>Notes REST API</h3>
-          <p>A RESTful notes service with Express routes and Mongoose schemas on MongoDB, used as the back end for my mobile lab apps.</p>
+          <p>A layered Express 5 + MongoDB service (routes → controllers → models) with full CRUD, safe ObjectId handling, request logging and centralised error handling. It is the back end for my mobile lab apps.</p>
           <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Mongoose</span></div>
-          <a class="p-link" href="https://github.com/mahamed7/Projects/tree/main/mobile-lab-server" target="_blank" rel="noopener">View code ↗</a>
-        </article>
-        <article class="card project" data-type="desktop">
-          <div class="p-top"><span class="p-emoji">🎓</span></div>
-          <h3>Student Grading System</h3>
-          <p>A Windows desktop app for recording student marks and calculating grades.</p>
-          <div class="tags"><span>C#</span><span>.NET 8</span><span>WinForms</span></div>
-          <a class="p-link" href="https://github.com/mahamed7/Projects/tree/main/StudentGradingSystem" target="_blank" rel="noopener">View code ↗</a>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mahamed7/notes-api" target="_blank" rel="noopener">View code ↗</a>
+          </div>
         </article>
         <article class="card project" data-type="mobile">
           <div class="p-top"><span class="p-emoji">⏱️</span></div>
-          <h3>Flowtime</h3>
-          <p>A cross-platform mobile app written in Flutter and Dart, one codebase for Android, iOS, web and desktop.</p>
-          <div class="tags"><span>Flutter</span><span>Dart</span></div>
-          <a class="p-link" href="https://github.com/mahamed7/Projects/tree/main/mobile-app-two" target="_blank" rel="noopener">View code ↗</a>
-        </article>
-        <article class="card project" data-type="mobile backend">
-          <div class="p-top"><span class="p-emoji">🔥</span></div>
-          <h3>Firebase CRUD App</h3>
-          <p>A real-time create, read, update and delete app on Firebase Realtime Database.</p>
-          <div class="tags"><span>React Native</span><span>Expo</span><span>Firebase</span></div>
-          <a class="p-link" href="https://github.com/mahamed7/Projects/tree/main/firebase-crud-app" target="_blank" rel="noopener">View code ↗</a>
+          <h3>FlowTime</h3>
+          <p>A deep-work focus timer: Pomodoro sessions, a three-step onboarding flow, Riverpod state management, go_router navigation and offline Hive storage. Unit and widget tests run in CI.</p>
+          <div class="tags"><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Hive</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mahamed7/flowtime" target="_blank" rel="noopener">View code ↗</a>
+          </div>
         </article>
         <article class="card project" data-type="web">
           <div class="p-top"><span class="p-emoji">🏫</span></div>
           <h3>School Management System</h3>
-          <p>A front-end demo for school administration and student registration, with dashboards and records.</p>
+          <p>A role-based portal with one login and three dashboards (admin, teacher, student), a shared session and data module, route guards, and an attendance register that recalculates each student's attendance %.</p>
           <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="p-link" href="https://github.com/mahamed7/Projects/tree/main/school-management-system" target="_blank" rel="noopener">View code ↗</a>
+          <div class="p-links">
+            <a class="p-link" href="https://mahamed7.github.io/school-management-system/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="p-link" href="https://github.com/mahamed7/school-management-system" target="_blank" rel="noopener">View code ↗</a>
+          </div>
+        </article>
+        <article class="card project" data-type="mobile backend">
+          <div class="p-top"><span class="p-emoji">🔥</span></div>
+          <h3>Firebase Realtime Tasks</h3>
+          <p>A React Native task manager whose list syncs live across devices through Firebase Realtime Database, using <code>onValue</code> listeners, server timestamps and full CRUD.</p>
+          <div class="tags"><span>React Native</span><span>Expo</span><span>Firebase</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mahamed7/firebase-realtime-tasks" target="_blank" rel="noopener">View code ↗</a>
+          </div>
+        </article>
+        <article class="card project" data-type="desktop">
+          <div class="p-top"><span class="p-emoji">🎓</span></div>
+          <h3>Student Grading System</h3>
+          <p>A Windows desktop app that turns exam scores into letter grades, with <code>TryParse</code> validation, guard clauses and colour-coded results. It includes a step-by-step code walkthrough.</p>
+          <div class="tags"><span>C#</span><span>.NET 8</span><span>WinForms</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mahamed7/student-grading-system" target="_blank" rel="noopener">View code ↗</a>
+          </div>
+        </article>
+        <article class="card project" data-type="mobile">
+          <div class="p-top"><span class="p-emoji">📱</span></div>
+          <h3>React Native Labs</h3>
+          <p>Course labs: a fintech wallet dashboard built from reusable components with NativeWind (Tailwind), and a stack-navigation app that passes data between screens.</p>
+          <div class="tags"><span>React Native</span><span>NativeWind</span><span>React Navigation</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mahamed7/react-native-labs" target="_blank" rel="noopener">View code ↗</a>
+          </div>
+        </article>
+        <article class="card project" data-type="web">
+          <div class="p-top"><span class="p-emoji">📚</span></div>
+          <h3>Xog-Macallin-Arday</h3>
+          <p>A teacher-student grade manager with admin, teacher and student portals, grade statistics, live search, dark mode and <code>localStorage</code> persistence.</p>
+          <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://mahamed7.github.io/xog-macallin-arday/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="p-link" href="https://github.com/mahamed7/xog-macallin-arday" target="_blank" rel="noopener">View code ↗</a>
+          </div>
+        </article>
+        <article class="card project" data-type="web">
+          <div class="p-top"><span class="p-emoji">🔎</span></div>
+          <h3>Student Search Engine</h3>
+          <p>An animated lookup app: enter a roll number and get the student's full academic and contact record instantly.</p>
+          <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://mahamed7.github.io/student-search-engine/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="p-link" href="https://github.com/mahamed7/student-search-engine" target="_blank" rel="noopener">View code ↗</a>
+          </div>
         </article>
         <article class="card project" data-type="web">
           <div class="p-top"><span class="p-emoji">✉️</span></div>

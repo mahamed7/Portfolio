@@ -213,10 +213,11 @@ mindset and real startup leadership experience.`,
     projects: () => `<span class="kw">HersiHealth</span>          React · TS · FHIR/Medplum health records
 <span class="kw">Smart Shop Manager</span>   React Native retail management (in dev)
 <span class="kw">Bookstore App</span>        React Native · SQLite CRUD
-<span class="kw">Notes REST API</span>       Node · Express · MongoDB
+<span class="kw">School Mgmt System</span>   JS role-based portal (live demo)
+<span class="kw">FlowTime</span>             Flutter · Riverpod · Hive focus timer
+<span class="kw">Notes REST API</span>       Node · Express 5 · MongoDB
 <span class="kw">Grading System</span>       C# · .NET 8 desktop
-<span class="kw">Flowtime</span>             Flutter · Dart
-→ code: <a href="https://github.com/mahamed7/Projects" target="_blank" rel="noopener">github.com/mahamed7/Projects</a>`,
+→ all repos: <a href="https://github.com/mahamed7?tab=repositories" target="_blank" rel="noopener">github.com/mahamed7</a>`,
     skills: () => `data       SQL · Python · ETL/ELT · data modelling · warehousing
 databases  PostgreSQL · Oracle · MongoDB · SQLite · Firebase
 languages  JavaScript · TypeScript · PHP · C# · Dart
