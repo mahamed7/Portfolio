@@ -210,7 +210,8 @@ mindset and real startup leadership experience.`,
   Hands-on experience in a professional university environment.`,
     education: () => `<span class="ok">✔ BSc Cybersecurity</span> · Borama University · 2022–2026 · <span class="hl">4.0 GPA, Academic Honors</span>
 <span class="ok">● BSc Software Engineering</span> · Amoud University · 2023–2027 (expected)`,
-    projects: () => `<span class="kw">HersiHealth</span>          React · TS · FHIR/Medplum health records
+    projects: () => `<span class="kw">Retail Data Warehouse</span> Python · PostgreSQL · dbt star schema
+<span class="kw">HersiHealth</span>          React · TS · FHIR/Medplum health records
 <span class="kw">Smart Shop Manager</span>   React Native retail management (in dev)
 <span class="kw">Bookstore App</span>        React Native · SQLite CRUD
 <span class="kw">School Mgmt System</span>   JS role-based portal (live demo)
@@ -218,7 +219,7 @@ mindset and real startup leadership experience.`,
 <span class="kw">Notes REST API</span>       Node · Express 5 · MongoDB
 <span class="kw">Grading System</span>       C# · .NET 8 desktop
 → all repos: <a href="https://github.com/mahamed7?tab=repositories" target="_blank" rel="noopener">github.com/mahamed7</a>`,
-    skills: () => `data       SQL · Python · ETL/ELT · data modelling · warehousing
+    skills: () => `data       SQL · Python · dbt · ETL/ELT · data modelling · warehousing
 databases  PostgreSQL · Oracle · MongoDB · SQLite · Firebase
 languages  JavaScript · TypeScript · PHP · C# · Dart
 apps       React · React Native · Expo · Flutter · Node/Express · .NET

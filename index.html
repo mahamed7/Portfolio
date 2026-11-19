@@ -180,6 +180,15 @@
         <button class="chip" data-filter="data">data</button>
       </div>
       <div class="projects-grid" id="projectsGrid">
+        <article class="card project featured" data-type="data backend">
+          <div class="p-top"><span class="p-emoji">🏬</span><span class="pill live">New · Data engineering</span></div>
+          <h3>Retail Data Warehouse</h3>
+          <p>An end-to-end <b>ELT pipeline</b> for a retail chain. Python extracts messy point-of-sale data and loads it into <b>PostgreSQL</b> with <code>COPY</code> and a load audit. <b>dbt</b> cleans and deduplicates it and builds a <b>star schema</b> (sales fact, date, store, product and customer dimensions). Nearly 150 data tests, including revenue reconciliation, rebuild and check the whole warehouse in CI on every push.</p>
+          <div class="tags"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>SQL</span><span>Star schema</span><span>CI</span></div>
+          <div class="p-links">
+            <a class="p-link" href="https://github.com/mahamed7/retail-data-warehouse" target="_blank" rel="noopener">View code ↗</a>
+          </div>
+        </article>
         <article class="card project featured" data-type="web data">
           <div class="p-top"><span class="p-emoji">🩺</span><span class="pill live">Featured</span></div>
           <h3>HersiHealth</h3>
@@ -294,7 +303,7 @@
       <div class="skills-grid">
         <div class="card skill-card">
           <h3>🧮 Data</h3>
-          <div class="tags big"><span class="hot">SQL</span><span class="hot">Python</span><span>ETL / ELT</span><span>Data Modelling</span><span>Data Warehousing</span><span>Database Design</span></div>
+          <div class="tags big"><span class="hot">SQL</span><span class="hot">Python</span><span class="hot">dbt</span><span>ETL / ELT</span><span>Data Modelling</span><span>Data Warehousing</span><span>Database Design</span></div>
         </div>
         <div class="card skill-card">
           <h3>🗄️ Databases</h3>
@@ -330,13 +339,13 @@
           <ul>
             <li>Python for data engineering</li>
             <li>Advanced SQL &amp; query optimisation</li>
-            <li>ETL/ELT &amp; dimensional modelling</li>
+            <li>dbt, ELT &amp; dimensional modelling</li>
           </ul>
         </div>
         <div class="card road-col">
           <h3><span class="dot next"></span> Up next</h3>
           <ul>
-            <li>Apache Airflow &amp; dbt</li>
+            <li>Apache Airflow orchestration</li>
             <li>Spark &amp; Kafka</li>
             <li>Cloud data platforms &amp; data quality</li>
           </ul>
@@ -344,7 +353,6 @@
         <div class="card road-col wide">
           <h3><span class="dot plan"></span> Planned portfolio projects</h3>
           <ul class="planned">
-            <li><b>Retail data warehouse</b><span>PostgreSQL · dbt · Power BI</span></li>
             <li><b>Financial reconciliation pipeline</b><span>Python · SQL · dbt · Airflow</span></li>
             <li><b>Real-time transaction streaming</b><span>Kafka · PySpark</span></li>
             <li><b>Cloud data lakehouse</b><span>AWS S3 · Glue · Athena</span></li>
