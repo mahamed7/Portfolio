@@ -154,7 +154,7 @@
       <div class="stats">
         <div class="stat"><b>4.0 GPA</b><span>BSc Cybersecurity, Academic Honors</span></div>
         <div class="stat"><b>2 years</b><span>Chief Technology Officer, SomeEats</span></div>
-        <div class="stat"><b>147</b><span>automated data tests in my dbt warehouse</span></div>
+        <div class="stat"><b>177</b><span>automated data tests in my dbt warehouse</span></div>
         <div class="stat"><b>9</b><span>projects with CI pipelines on GitHub</span></div>
       </div>
     </header>
@@ -182,11 +182,12 @@
         <h2>Projects</h2>
         <div class="item">
           <div class="item-head"><h3>Retail Data Warehouse<span class="tag-new">Data engineering</span></h3></div>
-          <div class="sub"><a href="https://github.com/mahamed7/retail-data-warehouse">github.com/mahamed7/retail-data-warehouse</a></div>
+          <div class="sub"><a href="https://github.com/mahamed7/retail-data-warehouse">github.com/mahamed7/retail-data-warehouse</a> · <a href="https://mahamed7.github.io/retail-data-warehouse/">live dashboard</a></div>
           <ul>
             <li>Built an end-to-end <b>ELT pipeline</b> in Python that bulk-loads <b>86,000+ rows</b> of messy point-of-sale data into PostgreSQL with <code>COPY</code> in under a second, with a load audit.</li>
             <li>Modelled a <b>star schema</b> in dbt (sales fact plus 4 dimensions) across staging, intermediate and mart layers, cleaning duplicates, re-sent orders and orphan records.</li>
-            <li>Wrote <b>147 data tests</b>, including revenue reconciliation to the cent; CI rebuilds and tests the whole warehouse on every push.</li>
+            <li>Added <b>type 2 product history</b> for point-in-time costing, idempotent daily batch loads, an incremental fact table and an <b>Airflow</b> DAG.</li>
+            <li>Wrote <b>177 data tests</b>, including revenue reconciliation to the cent; CI rebuilds the warehouse and publishes a live dashboard on every push.</li>
           </ul>
           <div class="stack"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>SQL</span><span>GitHub Actions</span></div>
         </div>

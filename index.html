@@ -183,9 +183,10 @@
         <article class="card project featured" data-type="data backend">
           <div class="p-top"><span class="p-emoji">🏬</span><span class="pill live">New · Data engineering</span></div>
           <h3>Retail Data Warehouse</h3>
-          <p>An end-to-end <b>ELT pipeline</b> for a retail chain. Python extracts messy point-of-sale data and loads it into <b>PostgreSQL</b> with <code>COPY</code> and a load audit. <b>dbt</b> cleans and deduplicates it and builds a <b>star schema</b> (sales fact, date, store, product and customer dimensions). Nearly 150 data tests, including revenue reconciliation, rebuild and check the whole warehouse in CI on every push.</p>
-          <div class="tags"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>SQL</span><span>Star schema</span><span>CI</span></div>
+          <p>An end-to-end <b>ELT pipeline</b> for a retail chain. Python extracts messy point-of-sale data and loads it into <b>PostgreSQL</b> with <code>COPY</code> and a load audit. <b>dbt</b> cleans and deduplicates it and builds a <b>star schema</b> with <b>type 2 product history</b>, so every sale is costed at the price in force on its date. Loads run as idempotent daily batches with an incremental fact table, orchestrated by an <b>Airflow</b> DAG. 177 data tests, including revenue reconciliation, run in CI on every push, and CI publishes a live dashboard.</p>
+          <div class="tags"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>SQL</span><span>Star schema</span><span>SCD2</span><span>Airflow</span><span>CI</span></div>
           <div class="p-links">
+            <a class="p-link" href="https://mahamed7.github.io/retail-data-warehouse/" target="_blank" rel="noopener">Live dashboard ↗</a>
             <a class="p-link" href="https://github.com/mahamed7/retail-data-warehouse" target="_blank" rel="noopener">View code ↗</a>
           </div>
         </article>
