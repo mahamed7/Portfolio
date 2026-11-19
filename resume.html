@@ -4,52 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saabir Dahir Mahamud · CV</title>
-  <meta name="description" content="CV of Saabir Dahir Mahamud: aspiring Data Engineer, Cybersecurity graduate (4.0 GPA, Honors), Software Engineering student.">
+  <meta name="description" content="CV of Saabir Dahir Mahamud: junior data engineer (Python, SQL, dbt, PostgreSQL), BSc Cybersecurity (4.0 GPA, Honors), former CTO of SomeEats.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b1020'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%232dd4bf' font-family='monospace' font-weight='700'>S_</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root { --ink: #0f172a; --muted: #475569; --accent: #0d9488; --line: #e2e8f0; --bg: #eef1f6; }
+    :root {
+      --ink: #0f172a;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #0f766e;
+      --accent-soft: #f0fdfa;
+      --accent-line: #99f6e4;
+      --line: #e2e8f0;
+      --side: #f8fafc;
+      --bg: #e9edf3;
+    }
     * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, "Segoe UI", sans-serif; font-size: 10.5pt; line-height: 1.5; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: Inter, system-ui, "Segoe UI", Arial, sans-serif;
+      font-size: 9.1pt; line-height: 1.4;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* Toolbar (screen only) */
     .toolbar { display: flex; justify-content: center; gap: 10px; padding: 16px; flex-wrap: wrap; }
     .toolbar a, .toolbar button {
-      font: inherit; font-weight: 600; padding: 9px 16px; border-radius: 10px; border: 1px solid var(--line);
-      background: #fff; color: var(--ink); text-decoration: none; cursor: pointer;
+      font: inherit; font-size: 10pt; font-weight: 600; padding: 9px 16px; border-radius: 10px;
+      border: 1px solid #cbd5e1; background: #fff; color: var(--ink); cursor: pointer;
     }
-    .toolbar button { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .page { width: min(210mm, 100% - 32px); margin: 0 auto 32px; background: #fff; padding: 16mm 16mm 14mm; box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08); border-radius: 6px; }
-    header { display: flex; gap: 18px; align-items: center; border-bottom: 2px solid var(--accent); padding-bottom: 12px; }
-    header img { width: 78px; height: 78px; border-radius: 50%; object-fit: cover; flex: none; }
-    h1 { font-size: 22pt; margin: 0; letter-spacing: -0.01em; line-height: 1.1; }
-    .title { color: var(--accent); font-weight: 600; margin: 3px 0 6px; }
-    .contact { color: var(--muted); font-size: 9.5pt; display: flex; flex-wrap: wrap; gap: 4px 14px; }
-    .contact a { color: inherit; text-decoration: none; }
-    h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin: 16px 0 6px; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
-    p { margin: 0 0 6px; }
-    .row { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-    .row h3 { font-size: 11pt; margin: 8px 0 0; }
-    .when { color: var(--muted); font-size: 9.5pt; white-space: nowrap; }
-    .org { color: var(--muted); font-weight: 500; margin-bottom: 3px; }
-    ul { margin: 2px 0 6px; padding-left: 18px; }
-    li { margin-bottom: 2px; }
-    .skills { display: grid; grid-template-columns: 130px 1fr; gap: 3px 12px; }
-    .skills b { font-weight: 600; }
-    .proj b { font-weight: 600; }
-    .proj span { color: var(--muted); font-size: 9.5pt; }
-    .tag { display: inline-block; font-size: 8.5pt; padding: 0 6px; border-radius: 4px; background: #f0fdfa; color: var(--accent); border: 1px solid #99f6e4; margin-left: 4px; vertical-align: 1px; }
-    @media (max-width: 600px) {
-      .page { padding: 20px 16px; }
-      header { flex-direction: column; align-items: flex-start; }
-      .skills { grid-template-columns: 1fr; }
-      .skills b { margin-top: 6px; }
+    .toolbar button { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* A4 sheet */
+    .page {
+      width: min(210mm, 100% - 32px); min-height: 297mm; margin: 0 auto 32px;
+      background: #fff; box-shadow: 0 12px 40px rgba(15, 23, 42, 0.10); border-radius: 4px;
+      border-top: 5px solid var(--accent); overflow: hidden;
+      display: flex; flex-direction: column;
     }
+
+    /* Header */
+    header { padding: 9mm 12mm 5mm; }
+    h1 { margin: 0; font-size: 23pt; font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--ink); }
+    .headline { margin: 3px 0 7px; font-size: 10.5pt; font-weight: 600; color: var(--accent); }
+    .contact { display: flex; flex-wrap: wrap; gap: 4px 16px; color: var(--muted); font-size: 8.8pt; }
+    .contact span, .contact a { display: inline-flex; align-items: center; gap: 5px; }
+    .contact svg { width: 11px; height: 11px; flex: none; stroke: var(--accent); }
+    .contact a:hover { color: var(--accent); }
+
+    .summary { margin: 7px 0 0; font-size: 9.2pt; color: var(--text); max-width: 172mm; }
+
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin-top: 8px; }
+    .stat { border: 1px solid var(--line); border-radius: 7px; padding: 4px 8px; }
+    .stat b { display: block; font-size: 12pt; font-weight: 800; color: var(--accent); line-height: 1.15; }
+    .stat span { font-size: 7.8pt; color: var(--muted); line-height: 1.25; display: block; }
+
+    /* Body: main column + sidebar */
+    .body { flex: 1; display: grid; grid-template-columns: 1fr 55mm; border-top: 1px solid var(--line); }
+    main { padding: 4mm 7mm 6mm 12mm; }
+    aside { padding: 4mm 9mm 6mm 6mm; background: var(--side); border-left: 1px solid var(--line); }
+
+    h2 {
+      display: flex; align-items: center; gap: 8px; margin: 8px 0 5px;
+      font-size: 8.4pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+    }
+    h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    main > h2:first-child, aside > h2:first-child { margin-top: 2px; }
+
+    .item { margin-bottom: 6px; break-inside: avoid; }
+    .item.compact { margin-bottom: 4px; }
+    .item.compact p { margin: 1px 0 0; }
+    .tech { font-weight: 500; font-size: 8.4pt; color: var(--muted); margin-left: 6px; }
+    .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+    h3 { margin: 0; font-size: 9.9pt; font-weight: 700; color: var(--ink); }
+    .when { flex: none; font-size: 8.4pt; color: var(--muted); font-weight: 500; }
+    .sub { font-size: 8.8pt; color: var(--muted); margin: 1px 0 3px; }
+    .sub a { color: var(--accent); font-weight: 500; }
+    ul { margin: 2px 0 0; padding-left: 14px; }
+    li { margin-bottom: 1px; }
+    li::marker { color: var(--accent); }
+    b, strong { font-weight: 600; color: var(--ink); }
+
+    .stack { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+    .stack span {
+      font-size: 7.6pt; font-weight: 500; padding: 1px 6px; border-radius: 4px;
+      background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-line);
+    }
+    .tag-new {
+      font-size: 7pt; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+      color: #fff; background: var(--accent); padding: 1px 5px; border-radius: 3px; margin-left: 6px; vertical-align: 2px;
+    }
+    .more { font-size: 8.8pt; color: var(--muted); margin-top: 2px; }
+    .more b { color: var(--text); }
+
+    /* Sidebar */
+    .edu { margin-bottom: 8px; }
+    .edu h3 { font-size: 9.6pt; }
+    .edu .sub { margin: 1px 0 0; }
+    .edu .award { display: inline-block; margin-top: 3px; font-size: 8pt; font-weight: 600; color: var(--accent); }
+    .skill-group { margin-bottom: 6px; }
+    .skill-group h4 { margin: 0 0 3px; font-size: 8.4pt; font-weight: 700; color: var(--ink); }
+    .skill-group p { margin: 0; font-size: 8.5pt; color: var(--text); line-height: 1.45; }
+    .side-list { list-style: none; padding: 0; margin: 0; font-size: 8.6pt; }
+    .side-list li { margin-bottom: 3px; }
+    .side-list span { color: var(--muted); }
+
+    @media (max-width: 720px) {
+      .page { min-height: 0; }
+      header { padding: 22px 18px 14px; }
+      h1 { font-size: 21pt; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .body { grid-template-columns: 1fr; }
+      main { padding: 14px 18px; }
+      aside { padding: 14px 18px 20px; border-left: 0; border-top: 1px solid var(--line); }
+      .item-head { flex-wrap: wrap; }
+    }
+
     @media print {
       @page { size: A4; margin: 0; }
-      body { background: #fff; font-size: 10pt; }
+      body { background: #fff; }
       .toolbar { display: none; }
-      .page { width: auto; margin: 0; box-shadow: none; border-radius: 0; padding: 12mm 14mm; }
+      .page { width: 210mm; height: 297mm; min-height: 0; margin: 0; box-shadow: none; border-radius: 0; }
       a { color: inherit; }
     }
   </style>
@@ -57,69 +135,129 @@
 <body>
   <div class="toolbar">
     <a href="index.html">← Back to portfolio</a>
-    <button onclick="window.print()">⬇ Save as PDF / Print</button>
+    <button type="button" onclick="window.print()">⬇ Save as PDF / Print</button>
   </div>
 
   <article class="page">
     <header>
-      <img src="assets/saabir.jpg" alt="Saabir Dahir Mahamud">
-      <div>
-        <h1>Saabir Dahir Mahamud</h1>
-        <p class="title">Aspiring Data Engineer · Software Engineer · Cybersecurity Graduate</p>
-        <div class="contact">
-          <span>Borama, Somaliland</span>
-          <a href="mailto:mahamedmahamud019@gmail.com">mahamedmahamud019@gmail.com</a>
-          <a href="https://github.com/mahamed7">github.com/mahamed7</a>
-          <a href="https://mahamed7.github.io/Portfolio/">mahamed7.github.io/Portfolio</a>
-        </div>
+      <h1>Saabir Dahir Mahamud</h1>
+      <p class="headline">Junior Data Engineer · Python · SQL · dbt · PostgreSQL</p>
+      <div class="contact">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Borama, Somaliland</span>
+        <a href="mailto:mahamedmahamud019@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>mahamedmahamud019@gmail.com</a>
+        <a href="https://github.com/mahamed7"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg>github.com/mahamed7</a>
+        <a href="https://mahamed7.github.io/Portfolio/"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>mahamed7.github.io/Portfolio</a>
+      </div>
+
+      <p class="summary">Data engineer with a <b>BSc in Cybersecurity (4.0 GPA, Academic Honors)</b> and <b>two years as Chief Technology Officer</b> of SomeEats. I build tested ELT pipelines with Python, SQL and dbt on PostgreSQL, and I have shipped web, mobile, desktop and API projects. I care about data people can trust: clean models, automated quality checks and secure data handling.</p>
+
+      <div class="stats">
+        <div class="stat"><b>4.0 GPA</b><span>BSc Cybersecurity, Academic Honors</span></div>
+        <div class="stat"><b>2 years</b><span>Chief Technology Officer, SomeEats</span></div>
+        <div class="stat"><b>147</b><span>automated data tests in my dbt warehouse</span></div>
+        <div class="stat"><b>9</b><span>projects with CI pipelines on GitHub</span></div>
       </div>
     </header>
 
-    <h2>Profile</h2>
-    <p>Data-focused software engineer with a <b>BSc in Cybersecurity (4.0 GPA, Academic Honors)</b> and <b>two years as Chief Technology Officer</b> of SomeEats. I build across the stack, from relational and NoSQL databases and REST APIs to web, mobile and desktop apps, and I'm now specialising in <b>data engineering</b>: reliable pipelines, dimensional models and clean, analysis-ready data. I bring a security-first approach to how data is stored, moved and accessed.</p>
+    <div class="body">
+      <main>
+        <h2>Experience</h2>
+        <div class="item">
+          <div class="item-head"><h3>Chief Technology Officer</h3><span class="when">2 years</span></div>
+          <div class="sub">SomeEats</div>
+          <ul>
+            <li>Senior technical decision-maker: set the company's technology direction and chose tools and platforms to fit its operations and budget.</li>
+            <li>Turned business needs into technical requirements and owned delivery from planning through rollout.</li>
+            <li>Escalation point for technical and operational problems across the company, diagnosing root causes and putting lasting fixes in place.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-head"><h3>Intern</h3><span class="when">2 months</span></div>
+          <div class="sub">Borama University</div>
+          <ul>
+            <li>Supported university staff with day-to-day operations and record keeping in a professional environment.</li>
+          </ul>
+        </div>
 
-    <h2>Experience</h2>
-    <div class="row"><h3>Chief Technology Officer</h3><span class="when">2 years</span></div>
-    <div class="org">SomeEats</div>
-    <ul>
-      <li>Was the company's senior technical decision-maker. Set its technology direction and chose tools and platforms that fit its operations and budget.</li>
-      <li>Turned business needs into technical requirements and owned delivery from planning through to rollout.</li>
-      <li>Acted as the escalation point for technical and operational problems across the organisation, diagnosing root causes and putting fixes in place.</li>
-    </ul>
-    <div class="row"><h3>Intern</h3><span class="when">2 months</span></div>
-    <div class="org">Borama University</div>
-    <ul>
-      <li>Got hands-on experience in a professional university environment, supporting staff with day-to-day operations and records.</li>
-    </ul>
+        <h2>Projects</h2>
+        <div class="item">
+          <div class="item-head"><h3>Retail Data Warehouse<span class="tag-new">Data engineering</span></h3></div>
+          <div class="sub"><a href="https://github.com/mahamed7/retail-data-warehouse">github.com/mahamed7/retail-data-warehouse</a></div>
+          <ul>
+            <li>Built an end-to-end <b>ELT pipeline</b> in Python that bulk-loads <b>86,000+ rows</b> of messy point-of-sale data into PostgreSQL with <code>COPY</code> in under a second, with a load audit.</li>
+            <li>Modelled a <b>star schema</b> in dbt (sales fact plus 4 dimensions) across staging, intermediate and mart layers, cleaning duplicates, re-sent orders and orphan records.</li>
+            <li>Wrote <b>147 data tests</b>, including revenue reconciliation to the cent; CI rebuilds and tests the whole warehouse on every push.</li>
+          </ul>
+          <div class="stack"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>SQL</span><span>GitHub Actions</span></div>
+        </div>
+        <div class="item compact">
+          <div class="item-head"><h3>HersiHealth<span class="tech">React · TypeScript · FHIR / Medplum</span></h3><span class="when">co-developed</span></div>
+          <p>Personal health record: AI extraction of medical documents, an emergency QR profile, expiring share links and an audit log of every public access. CI includes secret scanning.</p>
+        </div>
+        <div class="item compact">
+          <div class="item-head"><h3>FlowTime<span class="tech">Flutter · Riverpod · Hive</span></h3></div>
+          <p>Deep-work focus timer with go_router navigation, offline storage, and unit and widget tests in CI.</p>
+        </div>
+        <div class="item compact">
+          <div class="item-head"><h3>Notes REST API<span class="tech">Node.js · Express 5 · MongoDB</span></h3></div>
+          <p>Layered CRUD service with safe ObjectId handling, request logging and centralised error handling.</p>
+        </div>
+        <div class="item compact">
+          <div class="item-head"><h3>School Management System<span class="tech">JavaScript</span></h3><span class="when">live demo</span></div>
+          <p>Role-based admin, teacher and student portal with route guards and an attendance register.</p>
+        </div>
+        <p class="more"><b>Also:</b> Bookstore App (React Native, SQLite), Smart Shop Manager (in development), Student Grading System (C#, .NET 8), Firebase Realtime Tasks. All at github.com/mahamed7.</p>
+      </main>
 
-    <h2>Education</h2>
-    <div class="row"><h3>BSc Cybersecurity, Borama University</h3><span class="when">2022 – 2026</span></div>
-    <p>Graduated with a <b>4.0 GPA</b> and <b>Academic Honors</b>.</p>
-    <div class="row"><h3>BSc Software Engineering, Amoud University</h3><span class="when">2023 – 2027 (expected)</span></div>
-    <p>Focus: software development, programming and database technologies.</p>
+      <aside>
+        <h2>Education</h2>
+        <div class="edu">
+          <h3>BSc Cybersecurity</h3>
+          <div class="sub">Borama University · 2022 – 2026</div>
+          <span class="award">4.0 GPA · Academic Honors</span>
+        </div>
+        <div class="edu">
+          <h3>BSc Software Engineering</h3>
+          <div class="sub">Amoud University · 2023 – 2027 (expected)</div>
+        </div>
 
-    <h2>Selected Projects</h2>
-    <ul class="proj">
-      <li><b>Retail Data Warehouse</b>: an end-to-end ELT pipeline. Python generates and bulk-loads messy point-of-sale data into PostgreSQL; dbt cleans, deduplicates and models it into a star schema, with nearly 150 data tests (including revenue reconciliation) run in CI on every push. <span>Python · PostgreSQL · dbt · SQL</span></li>
-      <li><b>HersiHealth</b> (co-developed): a FHIR-native health record on Medplum with AI document extraction, an emergency QR profile, expiring share links and audit logging; CI with secret scanning. <span>React · TypeScript · Vite</span></li>
-      <li><b>School Management System</b>: a role-based admin, teacher and student portal with a shared session/data module, route guards and an attendance register; live demo on GitHub Pages. <span>JavaScript · HTML · CSS</span></li>
-      <li><b>FlowTime</b>: a deep-work focus timer with Riverpod state, go_router navigation, Hive offline storage, and unit and widget tests in CI. <span>Flutter · Dart</span></li>
-      <li><b>Notes REST API</b>: a layered Express 5 + Mongoose service with full CRUD, logging and centralised error handling. <span>Node.js · MongoDB</span></li>
-      <li><b>Bookstore Mobile App</b>: full CRUD book management with local SQLite storage, profile screens and navigation. <span>React Native · Expo · SQLite</span></li>
-      <li><b>Smart Shop Manager</b><span class="tag">in development</span>: sales, inventory and reporting for small retailers. <span>React Native · Expo</span></li>
-      <li><b>Also:</b> Firebase Realtime Tasks, Student Grading System (C#/.NET 8), React Native Labs and Xog-Macallin-Arday. All at github.com/mahamed7.</li>
-    </ul>
+        <h2>Skills</h2>
+        <div class="skill-group">
+          <h4>Data engineering</h4>
+          <p>SQL, Python, dbt, ELT / ETL, dimensional modelling, data warehousing, data testing</p>
+        </div>
+        <div class="skill-group">
+          <h4>Databases</h4>
+          <p>PostgreSQL, Oracle, MongoDB, SQLite, Firebase</p>
+        </div>
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <p>JavaScript, TypeScript, C#, PHP, Dart</p>
+        </div>
+        <div class="skill-group">
+          <h4>Frameworks</h4>
+          <p>React, React Native, Expo, Flutter, Node.js / Express, .NET</p>
+        </div>
+        <div class="skill-group">
+          <h4>Tools &amp; practice</h4>
+          <p>Git, GitHub, GitHub Actions (CI), automated testing</p>
+        </div>
+        <div class="skill-group">
+          <h4>Security</h4>
+          <p>Access control, least privilege, secure data handling, secret scanning</p>
+        </div>
 
-    <h2>Skills</h2>
-    <div class="skills">
-      <b>Data</b><span>SQL, Python, dbt, ETL/ELT, dimensional modelling (star schema), data warehousing, data testing, database design</span>
-      <b>Databases</b><span>PostgreSQL, Oracle, MongoDB, SQLite, Firebase</span>
-      <b>Languages</b><span>JavaScript, TypeScript, PHP, C#, Dart</span>
-      <b>Frameworks</b><span>React, React Native, Expo, Flutter, Node.js/Express, .NET</span>
-      <b>Security</b><span>Cybersecurity fundamentals, access control, secure data handling</span>
-      <b>Tools</b><span>Git, GitHub, GitHub Actions (CI)</span>
-      <b>Learning now</b><span>Apache Airflow, Spark, Kafka, cloud data platforms, data quality monitoring</span>
-      <b>Languages</b><span>Somali (native), English (professional working)</span>
+        <h2>Learning now</h2>
+        <div class="skill-group">
+          <p>Apache Airflow, Spark, Kafka, cloud data platforms, data quality monitoring</p>
+        </div>
+
+        <h2>Languages</h2>
+        <ul class="side-list">
+          <li>Somali <span>· native</span></li>
+          <li>English <span>· professional working</span></li>
+        </ul>
+      </aside>
     </div>
   </article>
 </body>
